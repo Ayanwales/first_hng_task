@@ -1,5 +1,5 @@
-const dayOfTheWeek = document.querySelector('#currentDayOfTheweek');
-const currentUTC = document.querySelector('#currentUTCTime');
+const dayOfTheWeek = document.querySelector('h2');
+const currentUTC = document.querySelector('p');
 
 let today= new Date()
 
@@ -22,4 +22,4 @@ const now = new Date;
 const utc_timestamp = Date.UTC(now.getUTCFullYear(),now.getUTCMonth(), now.getUTCDate() , 
       now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds(), now.getUTCMilliseconds());
 //console.log(utc_timestamp)
-      currentUTC.textContent = utc_timestamp
+      currentUTC.textContent = utc_timestamp;
